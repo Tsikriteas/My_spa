@@ -36,3 +36,219 @@
     transform: rotate(360deg);
   }
 }
+/* Βασικό reset για να ξεκινήσουμε με καθαρό στυλ */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Στυλ για το σώμα της σελίδας */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+/* Κεντρική στυλιστική περιοχή */
+.App {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Στυλ για την κεφαλίδα */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+}
+
+header nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin-top: 15px;
+}
+
+header nav ul li {
+  margin: 0 15px;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+}
+
+header nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Στυλ για το δωμάτιο */
+#room {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#room h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+#room ul {
+  list-style: none;
+}
+
+#room ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+#room p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 20px;
+  color: #e74c3c;
+}
+
+/* Στυλ για την γκαλερί φωτογραφιών */
+#gallery {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#gallery h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+  justify-items: center;
+}
+
+.gallery img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.gallery img:hover {
+  transform: scale(1.05);
+}
+
+/* Στυλ για το κομμάτι Επικοινωνίας */
+#contact {
+  background-color: #fff;
+  padding: 40px 20px;
+  margin-top: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+form label {
+  font-size: 1.2rem;
+}
+
+form input,
+form textarea {
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px;
+  background-color: #3498db;
+  color: #fff;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design για μικρές οθόνες */
+@media (max-width: 768px) {
+  header h1 {
+    font-size: 2rem;
+  }
+
+  header nav ul {
+    flex-direction: column;
+    margin-top: 20px;
+  }
+
+  header nav ul li {
+    margin: 10px 0;
+  }
+
+  #room h2, #gallery h2, #contact h2 {
+    font-size: 1.8rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  form input,
+  form textarea {
+    font-size: 1rem;
+  }
+
+  form button {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.5rem;
+  }
+
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+
+  form input,
+  form textarea {
+    font-size: 0.9rem;
+  }
+
+  form button {
+    font-size: 1rem;
+  }
+}
