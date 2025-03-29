@@ -252,3 +252,55 @@ form button:hover {
     font-size: 1rem;
   }
 }
+/* App.css */
+/* App.css */
+
+/* Στυλ για το Carousel */
+.carousel-container {
+  width: 100%;
+  max-height: 600px;
+}
+
+.carousel-container img {
+  object-fit: cover;
+  height: 600px;
+}
+
+/* Κεντρικό Container */
+.container {
+  padding: 40px 0;
+}
+
+/* Στυλ για το Footer */
+.footer {
+  background-color: #282c34;
+  color: white;
+  padding: 20px 0;
+}
+
+/* Στυλ για τα εικονίδια επικοινωνίας */
+ul {
+  padding: 0;
+}
+
+ul li {
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+ul li svg {
+  margin-right: 10px;
+}
+
+/* Στυλ για το Κουμπί */
+button {
+  background-color: #007bff;
+  border: none;
+  padding: 15px 30px;
+  font-size: 1.25rem;
+  border-radius: 5px;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
